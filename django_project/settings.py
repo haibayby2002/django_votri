@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'questions.apps.QuestionsConfig'
+    'questions.apps.QuestionsConfig',
+    'accounts.apps.AccountsConfig', #new
 ]
+
+AUTH_USER_MODEL = "accounts.CustomUser" # new
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
